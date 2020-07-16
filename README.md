@@ -52,5 +52,5 @@ If you need to update `npm`, you can make it using `npm`! Cool right? After runn
 ### Running the project
   After installing node, this project will need yarn too, so just run the following command.
   
-   $ npm start
+    $ npm start
      
