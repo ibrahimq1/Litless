@@ -9,6 +9,8 @@ This is where our solution solves thisissue. Litless, which stands for littering
 # Project Title : Litless
 ### Team members: Aldwin Umali, Cindy Wang, Quazi Rafid Ibrahim
 
+
+
 # Powered by IBM Watson Visual Recognition API.
 
 ![alt text](https://www.uctoday.com/wp-content/uploads/2018/10/BMWatson.jpg)
