@@ -11,6 +11,8 @@ This is where our solution solves thisissue. Litless, which stands for littering
 # Powered by IBM Watson Visual Recognition API.
 
 ![alt text](https://www.uctoday.com/wp-content/uploads/2018/10/BMWatson.jpg)
+
+
 Keep calm and keep earth calm.
 ---
 ## Requirements
