@@ -7,6 +7,7 @@ Mis-sorting ourtrash causes more work for cities which means more human effort n
 This is where our solution solves thisissue. Litless, which stands for littering -less is our solution to this problem.Applying IBM's Watson Visual Recognition API we can recognize an item if it shouldbelong in the garbage, compost or recycling which we base on the area since not everyregion can recycle the same items. What is amazing about Litless is that it is just thebeginning. Machine learning grows and becomes more accurate the more data we give ithence through the user we can refine the model to be better suited for recyclingapplications, even to a point where this refined model could automate the process ofsorting through recycling in recycling centers. The applications of this trained model arelimitless, from garbage seeking-drones for ocean clean-up to smart trash cans that cansort itself. Hence, creating a more sustainable and better way to sort through ourgarbage all over the world.
 
 # Project Title : Litless
+## Team members: Aldwin Umali, Cindy Wang, Quazi Rafid Ibrahim
 
 # Powered by IBM Watson Visual Recognition API.
 
