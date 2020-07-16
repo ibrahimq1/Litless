@@ -8,8 +8,10 @@ This is where our solution solves thisissue. Litless, which stands for littering
 
 # Project Title : Litless
 
-Keep calm and keep earth calm.
+# Powered by IBM Watson Visual Recognition API.
+<img src ="https://www.uctoday.com/wp-content/uploads/2018/10/BMWatson.jpg></img>
 
+Keep calm and keep earth calm.
 ---
 ## Requirements
 
