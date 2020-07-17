@@ -22,7 +22,7 @@ Keep calm and keep Earth calm.
 ---
 ## Requirements
 
-For development, you will only need Node.js and a node global package, Yarn, installed in your environement.
+For development, you will only need Node.js installed in your environement.
 
 ### Node
 - #### Node installation on Windows
