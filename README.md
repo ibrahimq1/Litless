@@ -18,7 +18,7 @@ This is where our solution solves thisissue. Litless, which stands for littering
 Link: https://litless.us-south.cf.appdomain.cloud/
 (Won't be fully functional as our project depends on uploading files from client side)
 
-Keep calm and keep earth calm.
+Keep calm and keep Earth calm.
 ---
 ## Requirements
 
