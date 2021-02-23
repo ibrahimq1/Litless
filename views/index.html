@@ -11,9 +11,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/main.css" />
         <link rel="stylesheet" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload" onload="initialize()">
+	<body class="is-preload">
 
 		<!-- Header -->
 			<section id="header">
@@ -43,9 +44,9 @@
 				<form action="/uploads" method="post" enctype="multipart/form-data">
 					
 					<div class="file-upload">
-						<div class="image-upload-wrap">
+						<div class="image-upload-wrap" id="imgupload">
 						  <input onclick="$('.file-upload-input').trigger( 'click' )" class="file-upload-input button style2 scrolly" type="file" accept="image/*" id="output" name="photo">
-						  <input type="submit" class= "button style2 scrolly" value="upload">
+						  <input type="submit" class= "button style2 scrolly" id="buttonupload" value="upload">
 						   <div class="drag-text">
 							  <h3>Drag and drop a file</h3>
 						  </div>
@@ -61,7 +62,7 @@
 				</form>
 				<p style="padding-top:50px;text-align: center; font: 1.5em sans-serif;">What is it?</p>
 				
-				<pre id="tag" onclick="window.location.reload()"></pre>
+				<pre id="tag"></pre>
 				
 				
 				<footer>
@@ -109,7 +110,7 @@
 
 		<!-- Scripts -->
 			<script src="./scripts/dropzone-5.7.0/dist/dropzone.js"></script>
-			<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyANAAT4ualymm7BsvDeP_P522NFZHG3Sa0"></script> 
+			<!--<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyANAAT4ualymm7BsvDeP_P522NFZHG3Sa0"></script> -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.poptrox.min.js"></script>
