@@ -111,8 +111,6 @@ app.use(session({
 // ##############################################################################################################
 
 
-
-
 /**
  * Endpoint to get a JSON array of all the visitors in the database
  * REST API example:
@@ -210,7 +208,7 @@ if(cloudant) {
 // API //
 
 var itemsTagged = {
-  "Recycle":["CD","DVDs","Cell Phones","Aerosol cans","Plastic Bottle","Potato Chip Bag","Plastic Container","Plastic Tub","Plastic Lid","Lawn Furniture","Laundry Basket","5-Gallon Bucket","Soda Crate","Garbage Can","Glass Bottles","Liquor Bottles","Beer Bottles","Soda Bottles","Wine Bottles","Glass Jars","Newspaper","Books","Phonebooks","Magazines","Milk Carton","Juice Carton","Scrap Paper","Junk Mail","Paper Towel Cardboard Roll","Toilet Paper Cardboard Roll","Pizza Box","Aluminum","Pots and Pans","Tins","Utensils","Steel Cans","Tin Cans","Paper Coffee Cups","Cardboard Boxes","Garbage","Food Waste","Takeout Containers","Wrapping Paper","Garden Hoses","Incandescent Light Bulbs","Latex Paint Can","Wet Strength Paper","Paper Towels","Tissues","Napkins","Hangers","Yard Waste","Christmas Tree","Tires","Electronics","Air Conditioners","LED Light Bulbs","Fluorescent Light Bulbs","Household Hazards","Household Cleaners","Pesticides","Fertilizers","Pool Chemicals","Oil Paints","Acrylic Paints","Oil-Based Paints","Acrylic-Based Paints","Propane Tanks","Batteries","Styrofoam","Paper Shredding","Plastic Bags","Rechargeable Batteries","Aerosol Spray Cans","Aerosol Cans","Antifreeze","Appliances","Automobiles","Bicycles","Building Materials","Carpet/Rugs","Clothing/Textiles","Cooking Oil","Crayons","Fire Extinguisher/Smoke Detector","Smoke Detector","Furniture","Gas","Ink Cartridges","Medical Waste","Motor Oil","Pallets","Pharmaceuticals","Toys","Plastic air pillows found inside shipping packages","Plastic straws","Concrete","Dehumidifier","Plastic Bubble Wrap","Packing Peanuts"],
+  "Recycle":["CD","DVDs","Cell Phones","Aerosol cans","Plastic Bottle","Potato Chip Bag","beverage", "Plastic Container","Plastic Tub","Plastic Lid","Lawn Furniture","Laundry Basket","5-Gallon Bucket","Soda Crate","Garbage Can","Glass Bottles","Liquor Bottles","Beer Bottles","Soda Bottles","Wine Bottles","Glass Jars","Newspaper","Books","Phonebooks","Magazines","Milk Carton","Juice Carton","Scrap Paper","Junk Mail","Paper Towel Cardboard Roll","Toilet Paper Cardboard Roll","Pizza Box","Aluminum","Pots and Pans","Tins","Utensils","Steel Cans","Tin Cans","Paper Coffee Cups","Cardboard Boxes","Garbage","Food Waste","Takeout Containers","Wrapping Paper","Garden Hoses","Incandescent Light Bulbs","Latex Paint Can","Wet Strength Paper","Paper Towels","Tissues","Napkins","Hangers","Yard Waste","Christmas Tree","Tires","Electronics","Air Conditioners","LED Light Bulbs","Fluorescent Light Bulbs","Household Hazards","Household Cleaners","Pesticides","Fertilizers","Pool Chemicals","Oil Paints","Acrylic Paints","Oil-Based Paints","Acrylic-Based Paints","Propane Tanks","Batteries","Styrofoam","Paper Shredding","Plastic Bags","Rechargeable Batteries","Aerosol Spray Cans","Aerosol Cans","Antifreeze","Appliances","Automobiles","Bicycles","Building Materials","Carpet/Rugs","Clothing/Textiles","Cooking Oil","Crayons","Fire Extinguisher/Smoke Detector","Smoke Detector","Furniture","Gas","Ink Cartridges","Medical Waste","Motor Oil","Pallets","Pharmaceuticals","Toys","Plastic air pillows found inside shipping packages","Plastic straws","Concrete","Dehumidifier","Plastic Bubble Wrap","Packing Peanuts"],
   "Compost":["food", "fruit","banana","Egg shells","Coffee grounds","Coffee filters","Tea bags ","Loose leaf tea ","Spoiled soy","paper napkins","pizza boxes","Paper bags","crumbs","Cooked pasta ","Cooked rice ","Stale bread","Stale tortilla ","Spoiled pasta ","Soil","Paper towel","Stale ","Stale cereal ","Cardboard box","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],
   "Garbage":["Masks", "masks","plastic gloves","Hot drink cups","Cold drink cups","Plastic bubble wrap","Laminated plastic","Dryer and disposable mop sheets","baby wipes","Drink pouches","Gum packages","Ribbons","Broken mugs","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""],
   "NA":["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""]
@@ -293,7 +291,7 @@ visualRecognition.classify(params, function(err, response) {
 });
 
 }
-else throw 'error';
+else res.redirect('/#banner');
 });
 
 //serve static file (index.html, images, css)

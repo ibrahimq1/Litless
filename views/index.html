@@ -45,16 +45,10 @@
 					
 					<div class="file-upload">
 						<div class="image-upload-wrap" id="imgupload">
-						  <input onclick="$('.file-upload-input').trigger( 'click' )" class="file-upload-input button style2 scrolly" type="file" accept="image/*" id="output" name="photo">
-						  <input type="submit" class= "button style2 scrolly" id="buttonupload" value="upload">
+						  <input style="left: 0px !important;" onclick="$('.file-upload-input').trigger( 'click' )" class="file-upload-input" type="file" accept="image/*" id="output" name="photo">
+						  <input type="submit" style="margin-left: 0px !important;border:#1FB264 2px solid;"class= "button style2 scrolly" id="buttonupload" value="upload">
 						   <div class="drag-text">
 							  <h3>Drag and drop a file</h3>
-						  </div>
-						</div>
-						<div class="file-upload-content">
-						  <img class="file-upload-image" src="#" alt="your image" />
-						  <div class="image-title-wrap">
-							<button type="button" onclick="removeUpload()" class="remove-image">Remove <span class="image-title">Uploaded Image</span></button>
 						  </div>
 						</div>
 					</div>
@@ -62,7 +56,7 @@
 				</form>
 				<p style="padding-top:50px;text-align: center; font: 1.5em sans-serif;">What is it?</p>
 				
-				<pre id="tag"></pre>
+				<pre id="tag">""</pre>
 				
 				
 				<footer>
